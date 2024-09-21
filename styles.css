@@ -7,11 +7,47 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #e5ddd5;
+  height: 200px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem 5%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #3b3b3b;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+}
+.navbar .navbar-nav a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.8rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-logo span {
+  color: rgb(106, 173, 6);
+}
+
+.navbar .navbar-extra a {
+  color: #ccc;
 }
 
 #app {
   max-width: 600px;
-  margin: 50px auto;
+  margin: 8rem auto;
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
@@ -31,7 +67,7 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-image: url(OIP.jpeg);
   cursor: default;
 }
 
@@ -81,4 +117,81 @@ h1 {
 
 #send-btn:hover {
   background-color: #1ebe54;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  margin-top: 10rem;
+  z-index: 200;
+
+  padding: 20px 0;
+  height: 32vh;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+.footer-content li {
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+.footer-content p {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.footer-content ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-content ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* media queris */
+/* laptop */
+html {
+  font-size: 90.5%;
+}
+
+#menu {
+  display: inline-block;
+}
+
+.navbar .navbar-nav {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: #444;
+  width: 20rem;
+  height: 100vh;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.navbar .navbar-nav.active {
+  right: 0;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: block;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
 }

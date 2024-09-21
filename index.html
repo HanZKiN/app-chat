@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat App</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Apps <span>Chat</span></a>
+      <div class="navbar-nav">
+        <a href="#setelan">Setting</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#Tema">Tema</a>
+        <a href="#Contact">Kontak Kami</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
     <div id="app">
       <h1>Chat App</h1>
       <div id="chat-window"></div>
@@ -42,6 +56,32 @@
         <button id="send-btn">Send</button>
       </div>
     </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Nama Perusahaan. Semua hak dilindungi.</p>
+
+        <li>create by@Hanz Programming</li>
+        <li>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+          quia.
+        </li>
+        <li>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione non
+          odio mollitia numquam.
+        </li>
+        <li>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
+          reprehenderit quasi laborum inventore tenetur vel ea id deleniti nobis
+          modi accusamus sit, voluptatibus nisi nesciunt.
+        </li>
+      </div>
+    </footer>
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
 
     <script src="script.js"></script>
   </body>

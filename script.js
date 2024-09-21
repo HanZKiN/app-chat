@@ -130,6 +130,8 @@ function getResponse(question) {
 
   if (question.includes("hai")) {
     return "Hai! Apa kabar?";
+  } else if (question.includes("hallo")) {
+    return "Hai!,Apa kabar?";
   } else if (question.includes("apa tugasmu")) {
     return "Saya adalah bot yang siap membantu!";
   } else if (question.includes("siapa kamu")) {
@@ -144,8 +146,26 @@ function getResponse(question) {
       month: "long",
       day: "numeric",
     };
+
     return `Hari ini adalah ${today.toLocaleDateString(undefined, options)}.`;
   } else {
     return "Maaf, saya tidak mengerti.";
   }
 }
+//  Toggle class active
+const navbarNav = document.querySelector(".navbar-nav");
+// ketika menu di klik
+document.querySelector("#menu").onclick = () => {
+  navbarNav.classList.toggle("active");
+};
+
+// klik diluar slidebar untuk menghilangkan nav
+const hamburger = document.querySelector("#menu");
+
+document.addEventListener("click", function (e) {
+  if (!menu.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
+});
+// memasukkan tool
+alert("selamat datang di kedai kopi kami");
