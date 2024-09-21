@@ -168,4 +168,4 @@ document.addEventListener("click", function (e) {
   }
 });
 // memasukkan tool
-alert("selamat datang di kedai kopi kami");
+alert("selamat datang di apps chat");
